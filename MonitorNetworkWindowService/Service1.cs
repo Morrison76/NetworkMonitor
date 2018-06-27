@@ -18,7 +18,7 @@ namespace MonitorNetworkWindowService
         protected override void OnStart(string[] args)
         {
             this.timer = new Timer();
-            this.timer.Interval = TimeSpan.FromSeconds(10).TotalMilliseconds;
+            this.timer.Interval = TimeSpan.FromMinutes(5).TotalMilliseconds;
             this.timer.Elapsed += Timer_Tick;
             this.timer.Enabled = true;
         }
